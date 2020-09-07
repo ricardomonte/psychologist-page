@@ -1,0 +1,38 @@
+.h-90 {
+  height: 5.6rem;
+}
+
+.bg-pink {
+  background-color: #efb4b4;
+}
+
+.bg-pink-transp {
+  background-color: rgba(239, 180, 180, 0.2);
+}
+
+.container-fluid {
+  max-width: 1440px;
+}
+
+.logo-img {
+  width: 4.4rem;
+  height: 4.4rem;
+}
+
+.bottom-nav {
+  top: 8rem;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.border-dark {
+  border-color: gray !important;
+}
+
+@media screen and (min-width: 992px) {
+  .bottom-nav {
+    top: 4.16rem;
+  }
+}
