@@ -114,7 +114,7 @@ body main .treatment .card-img-overlay .card-text:hover {
   transition: all 1s;
 }
 body main .knowme {
-  background-color: rgba(239, 180, 180, 0.4);
+  background-color: rgba(239, 180, 180, 0.2);
   height: 40rem;
 }
 body main .knowme .wrapper-knowme {
