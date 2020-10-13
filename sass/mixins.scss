@@ -1,0 +1,47 @@
+@mixin background_hero {
+  position: relative;
+  background-image: linear-gradient(331deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.24217436974789917) 74%), url(/img/HEYYOU-VERO-61.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20px auto auto auto;
+  height: 75vh;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: $bg-pink;
+    mix-blend-mode: soft-light;
+  }
+}
+
+@mixin container_fluid {
+  max-width: $container-fluid;
+  margin: 0 auto 0 auto;
+}
+
+@mixin flex($direcction, $align, $content) {
+  display: flex;
+  flex-direction: $direcction;
+  align-items: $align;
+  justify-content: $content;
+  
+}
+
+@mixin background_hero2 {
+  position: relative;
+  background-image: url(../img/HEYYOU-VERO-38.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40rem;
+  mix-blend-mode: multiply;
+}
+@mixin circle {
+  height: 100%;
+  width: 21rem;
+  border-radius: 50%;  
+}

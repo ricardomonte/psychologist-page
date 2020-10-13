@@ -1,0 +1,143 @@
+header {
+  background-color: #efb4b4;
+  height: 5.6rem;
+}
+header .container-fluid {
+  max-width: 1440px;
+}
+header .logo-img {
+  width: 4.4rem;
+  height: 4.4rem;
+}
+header .nav-link {
+  color: black !important;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+}
+body nav {
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+}
+body nav .bg-pink-transp {
+  background-color: rgba(239, 180, 180, 0.2);
+}
+body nav .bg-pink-transp li {
+  width: 30%;
+  border-color: gray !important;
+}
+body main {
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+}
+body main .container-hero {
+  height: 100%;
+}
+body main .container-hero .hero {
+  position: relative;
+  background-image: url(../img/HEYYOU-VERO-38.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40rem;
+  mix-blend-mode: multiply;
+}
+body main .container-hero .container-welcome {
+  position: relative;
+}
+body main .container-hero .contain-wlc__msg {
+  position: absolute;
+  right: 2.5rem;
+  top: 4rem;
+  left: 34rem;
+  z-index: 1;
+  height: 80%;
+}
+body main .container-hero .contain-wlc__msg .welcome {
+  font-size: 3.2em;
+}
+body main .container-hero .contain-wlc__msg .welcome-msg {
+  width: 70%;
+  font-size: 1.2em;
+}
+body main .container-hero .contain-wlc__msg .container-btn {
+  width: 50%;
+}
+body main .treatment {
+  margin: 8rem 0 0 0;
+}
+body main .treatment .container-services {
+  row-gap: 6rem;
+  padding-bottom: 8rem;
+}
+body main .treatment .container-services__img {
+  height: 21rem;
+}
+body main .treatment .card {
+  height: 100%;
+  width: 21rem;
+  border-radius: 50%;
+  margin: 0 2% 0 2%;
+}
+body main .treatment .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+body main .treatment .card-img-overlay {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: 50%;
+  z-index: 1;
+}
+body main .treatment .card-img-overlay .card-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 900;
+  font-size: 1.1em;
+  border-radius: 50%;
+  text-align: center;
+}
+body main .treatment .card-img-overlay .card-text:hover {
+  background-color: rgba(239, 180, 180, 0.6);
+  text-decoration: none;
+  transition: all 1s;
+}
+body main .knowme {
+  background-color: rgba(239, 180, 180, 0.4);
+  height: 40rem;
+}
+body main .knowme .wrapper-knowme {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body main .knowme .container-knowme {
+  height: 75%;
+}
+body main .knowme .container-knowme__info {
+  width: 40%;
+}
+body main .knowme .container-knowme__img {
+  width: 40%;
+  height: 80%;
+}
+body main .knowme .container-knowme__img .img-knowme {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 2px solid gray;
+}

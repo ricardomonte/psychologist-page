@@ -1,0 +1,140 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+
+body {
+  @include container_fluid;
+  nav {
+    @include container_fluid;
+    .bg-pink-transp {
+      background-color: $bg-pink-transp;
+    
+      li {
+        width: $w30;
+        border-color: gray !important;
+
+      }
+    }
+  }
+
+  main {
+    @include container_fluid;
+    .container-hero {
+      height: 100%;
+      
+      .hero {
+        @include background-hero2
+      }
+
+      .container-welcome {
+        position: relative;
+      }
+
+      .contain-wlc__msg {
+        position: absolute;
+        right: 2.5rem;
+        top: 4rem;
+        left: 34rem;
+        z-index: 1;
+        height: 80%;
+        
+        .welcome {
+          font-size: 3.2em;
+
+        }
+        .welcome-msg {
+          width: 70%;
+          font-size: 1.2em;
+
+        }
+
+        .container-btn {
+          width: 50%;
+        }
+      }
+
+    }
+
+    .treatment {
+      margin: 8rem 0 0 0;
+
+      .container-services {
+        row-gap: 6rem;
+        padding-bottom: 8rem;
+      }
+
+      .container-services__img {
+        height: 21rem;
+      }
+            
+      .card {
+        @include circle;
+        margin: 0 2% 0 2%;
+      }
+
+      .card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .6;
+        border-radius: 50%;
+      }
+
+      .card-img-overlay {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border-radius: 50%;
+        z-index: 1;
+        
+        .card-text {
+          @include flex($direcc-row, $aling-center, $just-center);
+          width: 100%;
+          height: 100%;
+          color:rgba(0,0,0,0.8);
+          font-weight: 900;
+          font-size: 1.1em;
+          border-radius: 50%;
+          text-align: center;
+          &:hover {
+            background-color:rgba($bg-pink, 0.6);
+            text-decoration: none;
+            transition: all 1s;
+
+          }
+        }
+      }
+    }
+
+    .knowme {
+      background-color: rgba($bg-pink, 0.4);
+      height: 40rem;
+
+      .wrapper-knowme {
+        height: 100%;
+
+        @include flex($direcc-colum, $aling-center, $just-around)
+      }
+
+      .container-knowme {
+        height: 75%;
+      }
+
+      .container-knowme__info {
+        width: 40%;
+      }
+      .container-knowme__img {
+        width: 40%;
+        height: 80%;
+
+        .img-knowme {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10%;
+          border: 2px solid gray;
+        }
+      }
+    }
+  }  
+}

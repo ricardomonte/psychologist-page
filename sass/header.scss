@@ -1,0 +1,17 @@
+header {
+  background-color: $bg-pink;
+  height: $h-90;
+
+  .container-fluid {
+    max-width: $container-fluid
+  }
+
+  .logo-img {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+
+  .nav-link {
+    color: black !important;
+  }
+}

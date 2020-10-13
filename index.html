@@ -9,46 +9,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="sass/styles.css" />
   <title>Hello, world!</title>
 </head>
 
 <body>
   <div class="container-fluid px-0">
     <header
-      class="container-fluid nav-bar d-flex flex-column justify-content-center align-items-center bg-pink h-90 px-0">
+      class="container-fluid nav-bar d-flex flex-column justify-content-center align-items-center px-0">
       <div class="navbar-brand d-flex align-items-center justify-content-center mr-0">
         <a href="#"><img class="logo-img d-none d-lg-block" src="img/logo_4c.png" alt="logo" /></a>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none px-0" type="button" data-toggle="collapse"
+        <!-- <button class="navbar-toggler navbar-toggler-right d-lg-none px-0" type="button" data-toggle="collapse"
           data-target="#a">
           <img class="logo-img" src="img/logo_4c.png" alt="logo" />
         </button>
-      </div>
+      </div> -->
     </header>
-    <nav class="container-fluid mx-0 px-0 py-0 bottom-nav navbar navbar-expand-lg navbar-light">
-      <div class="collapse navbar-collapse" id="a">
-        <ul class="ul-bottom-nav navbar-nav w-100 justify-content-lg-between bg-pink-transp">
-          <li class="nav-item w-100 text-center bg-pink-transp border border-dark border-top-0">
+    <nav class="container-fluid mx-0 px-0 py-0 bottom-nav navbar navbar-light">
+      <div class="w-100 d-flex" id="a">
+        <ul class="ul-bottom-nav navbar-nav w-100 d-flex flex-row justify-content-between bg-pink-transp">
+          <li class="nav-item text-center bg-pink-transp border border-dark border-top-0">
             <a class="nav-link" href="#">Home</a>
           </li>
-          <li class="nav-item w-100 text-center bg-pink-transp border border-dark border-top-0">
+          <li class="nav-item text-center bg-pink-transp border border-dark border-top-0">
             <a class="nav-link" href="#">Conoce Me</a>
           </li>
-          <li class="nav-item w-100 text-center bg-pink-transp border border-dark border-top-0">
+          <li class="nav-item text-center bg-pink-transp border border-dark border-top-0">
             <a class="nav-link" href="#">Tratamientos</a>
           </li>
-          <li class="nav-item w-100 text-center bg-pink-transp border border-dark border-top-0">
+          <li class="nav-item text-center bg-pink-transp border border-dark border-top-0">
             <a class="nav-link" href="#">Contacto</a>
           </li>
         </ul>
       </div>
     </nav>
     <main class="container-fluid w-100 h-100 px-0">
-      <div class="vh-50">
+      <div class=" container-hero vh-75">
         <div class="hero w-100">
-          <h1>hola mundo</h1>
+          <div class="container-welcome w-100 h-100">
+            <div class="contain-wlc__msg d-flex flex-column align-items-start justify-content-center">
+              <h1 class="welcome text-white">Hola y Bienvenid@</h1>
+              <p class="welcome-msg text-white">Déjame acompañarte en tu proceso de cambio,  a través de una terapia  focalizada y a la medida de tus necesidades. En un espacio de confidencialidad y mediante un vínculo respetuoso y constructivo, promoviendo siempre el bienestar integral, a largo plazo.
+              </p>
+              <div class="container-button w-100 d-flex justify-content-center">
+                <div class="container-btn">
+                  <a href="mailto:ramn21@gmail.com" class="btn btn-primary btn-block">Contacta Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <section class="treatment w-100 h-100">
+        <div class="container-services w-100 d-flex flex-column align-items-center h-100">
+          <div class="container-sevices__title">
+            <h1 class="services-title">Servicios</h1>
+          </div>
+          <div class="container-services__img w-100 d-flex justify-content-center align-items-center">
+            <div class="card">
+              <img class="card-img" src="img/HEYYOU-VERO-6.JPG" alt="Card image">
+              <div class="card-img-overlay">
+                <a href="#" class="card-text">Psicoterapia Indivual Adultos</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img" src="img/HEYYOU-VERO-12.JPG" alt="Card image">
+              <div class="card-img-overlay">
+                <a href="#" class="card-text">Programa Reencuentrate con el Amor</a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img" src="img/HEYYOU-VERO-7.JPG" alt="Card image">
+              <div class="card-img-overlay">
+                <a href="#" class="card-text">Talleres Grupales</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="knowme w-100">
+        <div class="wrapper-knowme ">
+          <h1 class="knowme-title">QUIÉN SOY...</h1>
+          <div class="container-knowme w-100 d-flex flex-row-reverse align-items-center justify-content-around">
+            <div class="container-knowme__info">
+              <h2 class="subtitle-knowme">...O SOBRE MI:</h2>
+              <p class="knowme-content">Hola, soy Verónica Montenegro y me encanta acompañar procesos terapéuticos de transformación personal.  
+                Desde mi experiencia personal y profesional, he podido constatar que el cambio es permanente y todos tenemos el potencial de dirigir esos cambios en función de nuestros sueños de manera consciente. 
+                </p>
+            </div>
+            <div class="container-knowme__img">
+              <img class="img-knowme" src="img/HEYYOU-VERO-61.JPG" alt="veronica montenegro psicologa">
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
