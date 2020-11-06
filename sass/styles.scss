@@ -2,10 +2,25 @@
 @import 'mixins';
 @import 'header';
 
+h1 {
+  font-family: 'Dr Sugiyama', cursive;
+}
+
+p {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.5em;
+}
+
+a {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.3em !important;
+}
+
+
 body {
-  @include container_fluid;
+  
+  // @include container_fluid;
   nav {
-    @include container_fluid;
     .bg-pink-transp {
       background-color: $bg-pink-transp;
     
@@ -18,9 +33,9 @@ body {
   }
 
   main {
-    @include container_fluid;
+    // @include container_fluid;
     .container-hero {
-      height: 100%;
+      height: 55rem;
       
       .hero {
         @include background-hero2
@@ -28,24 +43,44 @@ body {
 
       .container-welcome {
         position: relative;
+        
       }
 
       .contain-wlc__msg {
         position: absolute;
         right: 2.5rem;
-        top: 4rem;
-        left: 34rem;
+        top: 5rem;
+        left: 37rem;
         z-index: 1;
-        height: 80%;
+        height: 70%;
         
-        .welcome {
-          font-size: 3.2em;
+        
+        .container-msg-button {
+          height: 30rem;
+          & ::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 80%;
+            left: 0;
+            top: 0;
+            background-image: url(../img/logo_4crose.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            z-index: -1;
+          }
+        }
 
+        .welcome {
+          font-size: 5.8vw;
         }
         .welcome-msg {
-          width: 70%;
-          font-size: 1.2em;
-
+          width: 100%;
+          font-size: 2vw;
+          line-height: 2em;
+          text-align: center;
         }
 
         .container-btn {
@@ -56,20 +91,26 @@ body {
     }
 
     .treatment {
-      margin: 8rem 0 0 0;
+      margin: 2rem 0 0 0;
+      height: 60rem;
 
       .container-services {
         row-gap: 6rem;
-        padding-bottom: 8rem;
+        height: 50rem
+      }
+
+      .services-title {
+        font-size: 4.5em;
       }
 
       .container-services__img {
         height: 21rem;
       }
             
-      .card {
+      .cards {
         @include circle;
         margin: 0 2% 0 2%;
+        transition: 0.5s;
       }
 
       .card-img {
@@ -93,27 +134,40 @@ body {
           height: 100%;
           color:rgba(0,0,0,0.8);
           font-weight: 900;
-          font-size: 1.1em;
           border-radius: 50%;
           text-align: center;
           &:hover {
             background-color:rgba($bg-pink, 0.6);
             text-decoration: none;
-            transition: all 1s;
+            transition: background-color 0.5s ease-in-out;
 
           }
         }
+        
+      }
+      .card-body {
+        border: none;
+        font-size: 1.2em;
+        text-align: center;
+      }
+
+      .services-button {
+        width: 40%;
       }
     }
 
     .knowme {
-      background-color: rgba($bg-pink, 0.2);
-      height: 40rem;
+      background-color: $bg-pink;
+      height: 42rem;
 
       .wrapper-knowme {
         height: 100%;
 
-        @include flex($direcc-colum, $aling-center, $just-around)
+        @include flex($direcc-colum, $aling-center, $just-around);
+      }
+
+      .knowme-title {
+        font-size: 3.5rem;
       }
 
       .container-knowme {
@@ -122,6 +176,7 @@ body {
 
       .container-knowme__info {
         width: 40%;
+        font-size: 1em;
       }
       .container-knowme__img {
         width: 40%;
@@ -130,10 +185,16 @@ body {
         .img-knowme {
           width: 100%;
           height: 100%;
-          object-fit: cover;
-          border-radius: 10%;
-          border: 2px solid gray;
+          object-fit: contain;
         }
+      }
+    }
+
+    .appoiment {
+      height: 16rem;
+
+      .appoiment-button {
+        width: 40%;
       }
     }
   }  

@@ -9,7 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="sass/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dr+Sugiyama&display=swap" rel="stylesheet"> 
   <title>Hello, world!</title>
 </head>
 
@@ -44,47 +46,69 @@
       </div>
     </nav>
     <main class="container-fluid w-100 h-100 px-0">
-      <div class=" container-hero vh-75">
+      <div class=" container-hero">
         <div class="hero w-100">
           <div class="container-welcome w-100 h-100">
-            <div class="contain-wlc__msg d-flex flex-column align-items-start justify-content-center">
-              <h1 class="welcome text-white">Hola y Bienvenid@</h1>
-              <p class="welcome-msg text-white">Déjame acompañarte en tu proceso de cambio,  a través de una terapia  focalizada y a la medida de tus necesidades. En un espacio de confidencialidad y mediante un vínculo respetuoso y constructivo, promoviendo siempre el bienestar integral, a largo plazo.
-              </p>
+            <div class="contain-wlc__msg d-flex flex-column align-items-center justify-content-around">
+              <div class="d-flex flex-column align-items-center justify-content-around h-100">
+                <h1 class="welcome text-dark">Hola y Bienvenid@</h1>
+                <div class="container-msg-button d-flex flex-column align-items-center justify-content-center">
+                  <p class="welcome-msg text-dark-50">Déjame acompañarte en tu proceso de cambio,  a través de una terapia  focalizada y a la medida de tus necesidades. En un espacio de confidencialidad y mediante un vínculo respetuoso y constructivo, promoviendo siempre el bienestar integral, a largo plazo.
+                  </p>
+                </div>
+              </div>
               <div class="container-button w-100 d-flex justify-content-center">
                 <div class="container-btn">
-                  <a href="mailto:ramn21@gmail.com" class="btn btn-primary btn-block">Contacta Me</a>
+                  <a href="mailto:ramn21@gmail.com" class="btn btn-info btn-block p-3">Contacta Me</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <section class="treatment w-100 h-100">
-        <div class="container-services w-100 d-flex flex-column align-items-center h-100">
+      <section class="treatment w-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="container-services w-100 d-flex flex-column align-items-center">
           <div class="container-sevices__title">
             <h1 class="services-title">Servicios</h1>
           </div>
           <div class="container-services__img w-100 d-flex justify-content-center align-items-center">
-            <div class="card">
+            <div class="cards" data-aos="zoom-in">
               <img class="card-img" src="img/HEYYOU-VERO-6.JPG" alt="Card image">
               <div class="card-img-overlay">
-                <a href="#" class="card-text">Psicoterapia Indivual Adultos</a>
+                <a class="card-text" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">Psicoterapia Indivual Adultos</a>
+              </div>
+              <div class="collapse" id="collapse1">
+                <p class="card card-body">
+                  Espacio confidencial que te permitirá generar los cambios que deseas mediante un proceso respetuoso y constructivo
+                </p>
               </div>
             </div>
-            <div class="card">
+            <div class="cards" data-aos="zoom-in">
               <img class="card-img" src="img/HEYYOU-VERO-12.JPG" alt="Card image">
               <div class="card-img-overlay">
-                <a href="#" class="card-text">Programa Reencuentrate con el Amor</a>
+                <a class="card-text" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">Programa Reencuentrate con el Amor</a>
+              </div>
+              <div class="collapse" id="collapse2">
+                <p class="card card-body">
+                  Programa de acompañamiento, que te permitirá recobrar la seguridad en ti misma, sanando a la niña interna demandante y dependiente, para establecer relaciones desde el respeto hacia ti misma y el otro.
+                </p>
               </div>
             </div>
-            <div class="card">
+            <div class="cards" data-aos="zoom-in">
               <img class="card-img" src="img/HEYYOU-VERO-7.JPG" alt="Card image">
               <div class="card-img-overlay">
-                <a href="#" class="card-text">Talleres Grupales</a>
+                <a class="card-text" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">Talleres Grupales</a>
               </div>
-            </div>
+              <div class="collapse" id="collapse3">
+                <p class="card card-body">
+                  Espacio de encuentro grupal dedicado trabajar temáticas específicas y con acompañamiento personalizado.
+                </p>
+              </div>
+            </div> 
           </div>
+        </div>
+        <div class="services-button" data-aos="zoom-in">
+          <a class="btn btn-info btn-block p-3" href="https://encuadrado.com/p/psicologa-veronica-montenegro">Conoce mas</a>
         </div>
       </section>
       <section class="knowme w-100">
@@ -93,9 +117,12 @@
           <div class="container-knowme w-100 d-flex flex-row-reverse align-items-center justify-content-around">
             <div class="container-knowme__info">
               <h2 class="subtitle-knowme">...O sobre mi:</h2>
-              <p class="knowme-content">Hola, soy Verónica Montenegro y me encanta acompañar procesos terapéuticos de transformación personal.  
-                Desde mi experiencia personal y profesional, he podido constatar que el cambio es permanente y todos tenemos el potencial de dirigir esos cambios en función de nuestros sueños de manera consciente. 
-                </p>
+              <p class="knowme-content d-flex align-items-center justify-content-center">
+                Hola, soy Verónica Montenegro y me encanta acompañar procesos terapéuticos de transformación personal.  
+                Desde mi experiencia personal y profesional, he podido constatar que el cambio es permanente y todos tenemos el potencial de dirigir esos cambios en función de nuestros sueños de manera consciente. <br/>
+                <br/>
+                Desde hace 8 años que retome la atención clínica individual particular porque es lo que amo y lo hago con todo el amor y profesionalismo del mundo.
+              </p>
             </div>
             <div class="container-knowme__img">
               <img class="img-knowme" src="img/HEYYOU-VERO-61.JPG" alt="veronica montenegro psicologa">
@@ -103,7 +130,16 @@
           </div>
         </div>
       </section>
+      <section class="appoiment d-flex flex-column align-items-center justify-content-around w-100">
+        <div class="appoiment-title">
+          <h1>Agenda una hora conmigo</h1>
+        </div>
+        <div class="appoiment-button">
+          <a class="btn btn-info btn-block p-3" href="https://encuadrado.com/p/psicologa-veronica-montenegro">Agenda tu hora</a>
+        </div>
+      </section>
     </main>
+    <footer></footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -114,6 +150,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

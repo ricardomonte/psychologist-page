@@ -4,8 +4,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 20px auto auto auto;
-  height: 75vh;
-  &:after {
+  height: 70rem;
+  &::after {
     content: "";
     display: block;
     position: absolute;
@@ -36,12 +36,15 @@
   background-image: url(../img/HEYYOU-VERO-38.JPG);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 40rem;
+  background-position: left;
+  height: 50rem;
   mix-blend-mode: multiply;
 }
 @mixin circle {
-  height: 100%;
-  width: 21rem;
+  height: 18rem;
+  width: 18rem;
   border-radius: 50%;  
+}
+
+@mixin bounce {
 }
